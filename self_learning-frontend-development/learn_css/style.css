@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafaf7;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/*========== HEADER + NAV BAR ==========*/
+#header {
+  background-color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+nav ul {
+  display: flex; /* Face ca LI-urile să stea unul lângă altul */
+  list-style: none; /* Elimină punctele din fața listei */
+  gap: 30px; /* Adaugă spațiu între elementele meniului */
+}
+
+nav ul li a {
+  text-decoration: none; /* Elimină sublinierea link-urilor */
+  color: #000; /* Culoarea textului */
+  font-family: sans-serif; /* Fontul dorit */
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Animație fină la hover */
+}
+
+nav ul li a:hover {
+  color: #bc002d; /* Culoare diferită la hover (ex: portocaliu sushi) */
+}
+
+/*========== HOME ==========*/
+.home_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home_container h2 {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 5px solid #bc002d;
+  color: #333;
+}
+
+.home_btn {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0 auto;
+
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  color: #1a1a1a;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.home_btn:hover {
+  border-color: #bc002d;
+  background-color: #bc002d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.home_btn i {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.home_btn:hover i {
+  transform: rotate(-15deg) scale(1.1);
+}
+
+/*========== HOME DISHES CAROUSE ==========*/
+.carousel {
+  margin: 2rem auto;
+  width: 90%;
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  animation: spin 35s infinite linear;
+  padding-right: 2em;
+}
+
+.card {
+  flex: 0 0 10em;
+  height: 10em;
+  object-fit: cover;
+
+  border: 3px solid #bc002d;
+  padding: 5px;
+  background-color: white;
+  border-radius: 8px;
+
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border-color: #1a1a1a;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*========== HOME REVIEWS CAROUSEL ==========*/
+.reviews__carousel {
+  margin: 2rem auto 5rem auto;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.reviews__group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2rem;
+  padding: 20px 1rem;
+  animation: review-spin 30s infinite linear;
+}
+
+.review__card {
+  flex: 0 0 300px;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  border: 2px solid #eee;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.review__card:hover {
+  transform: translateY(-10px);
+  border-color: #bc002d;
+}
+
+.review__profile {
+  width: 60px;
+  height: 60px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #888;
+}
+
+.review__name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.review__stars {
+  margin-bottom: 1rem;
+}
+
+.review__stars .gold {
+  color: #ffcc00;
+}
+.review__stars .gray {
+  color: #e0e0e0;
+}
+
+.review__text {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+@keyframes review-spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+.reviews__carousel:hover .reviews__group {
+  animation-play-state: paused;
+}
+
+/*========== ABOUT US ==========*/
+
+/*========== MENU ==========*/
+
+/*========== CONTACT US ==========*/
+
+/*========== FOOTER ==========*/
+#footer_section {
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 4rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.footer_autoritati {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_links {
+  text-decoration: none;
+}
+
+.social_media_links {
+  justify-content: center;
+}
+
+.footer_autoritati h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer_autoritati_container img {
+  width: 150px;
+  height: auto;
+}
+
+.footer_autoritati_img {
+  display: flex;
+  gap: 12rem;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #f0f0eb;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: rgba(188, 0, 45, 0.3);
+  border: 2px solid #f0f0eb;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bc002d;
+}
+
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6px;
+  display: inline-flex;
+  color: #bc002d;
+  font-size: 1.25rem;
+  border: 1px solid #bc002d;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+  transition: bottom 0.4s, transform 0.4s background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+  background-color: #bc002d;
+  color: #fafaf7;
+}
+
+.show-scroll {
+  bottom: 3rem;
+}

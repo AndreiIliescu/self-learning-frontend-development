@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website-ul oficial al restaurantului Nova Sushi." />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 
+    'unsafe-inline'; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 
+    'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data: https:;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.novasushi.ro/" />
+    <meta property="og:title" content="Nova Sushi | Tradiție Japoneză și Gust Modern" />
+    <meta property="og:description" content="Descoperă cel mai bun sushi, ramen autentic și delicii asiatice în inima orașului. 
+    Comandă online sau rezervă o masă!" />
+    <meta property="og:image" content="{% static 'images/og-image-nova.jpg' %}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.novasushi.ro/" />
+    <meta name="twitter:title" content="Nova Sushi | Experiență Asiatică Autentică" />
+    <meta name="twitter:description" content="Gustă prospețimea! Nova Sushi îți aduce aromele Japoniei direct la tine acasă. 
+    Vezi meniul nostru complet." />
+    <meta name="twitter:image" content="{% static 'images/og-image-nova.jpg' %}" />
+    <meta name="theme-color" content="#bc002d" />
+
+    <!-- PAGE TITLE -->
+    <title>Nova Sushi - Despre noi</title>
+
+    <!-- REMIX ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favocins/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Nanum+Brush+Script&display=swap" 
+    rel="stylesheet" />
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+    <script src="scrollreveal.min.js" defer></script>
+</head>
+<body>
+    <!-- HEADER + NAV BAR SECTION -->
+        <header id="header">
+        <a href="home.html">
+            <img src="assets/logo_no_background.webp" alt="Nova Sushi logo" class="logo" />
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Acasă</a>
+                </li>
+
+                <li>
+                    <a href="about_us.html">Povestea noastră</a>
+                </li>
+
+                <li>
+                    <a href="menu.html">Meniu</a>
+                </li>
+
+                <li>
+                    <a href="contact_us.html">Contactează-ne</a>
+                </li>
+
+                <li>
+                    <a href="#">Coș <i class="ri-shopping-cart-2-line"></i></a>
+                </li>
+
+                <li>
+                    <a href="#">Intă în cont <i class="ri-user-3-line"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ABOUT US SECTION -->
+    <main>
+        <section id="about_us">
+            <header>
+                <h1>Povestea Nova Sushi: Din Pasiune pentru Asie</h1>
+            </header>
+
+            <article>
+                <h2>O nouă stea în universul culinar</h2>
+                <p>Povestea Nova Sushi a început dintr-o dorință simplă: aceea de a aduce gustul rafinat și echilibrat al 
+                    Japoniei în comunitatea noastră. Născut din admirația pentru cultura asiatică și respectul pentru 
+                    ingrediente, Nova nu este doar un restaurant, ci o invitație la călătorie. Ne-am imaginat un loc 
+                    unde tradiția milenară întâlnește spiritul modern, creând o explozie de arome menită să surprindă 
+                    atât cunoscătorii, cât și pe cei care gustă sushi pentru prima dată. Numele <strong>Nova</strong> 
+                    simbolizează un nou început, o sclipire proaspătă în peisajul gastronomic local.
+                </p>
+            </article>
+            <figure>
+                <img src="assets/about_us_images/restaurant.webp" alt="Interiorul restaurantului Nova Sushi" />
+            </figure>
+
+            <article>
+                <h2>Filozofia noastră: Prospețime fără compromisuri</h2>
+                <p>Știm că secretul unui sushi perfect stă în detalii, iar detaliile nu pot fi mascate. De la orezul 
+                    pregătit la temperatura ideală și asezonat cu oțet de cea mai bună calitate, până la peștele 
+                    proaspăt, atent selecționat zilnic de la furnizori de încredere, nu facem niciodată rabat de la 
+                    calitate. Credem că mâncarea trebuie să fie onestă. În bucătăria noastră, fiecare rolă, fiecare 
+                    nigiri și fiecare sashimi este pregătit pe loc, cu măiestrie și răbdare, pentru a vă oferi o 
+                    experiență culinară nu doar delicioasă, ci și sănătoasă.
+                </p>
+            </article>
+            <figure>
+                <img src="assets/about_us_images/dishes.webp" alt="Platouri cu mancare si bucatarul chef" />
+            </figure>
+
+            <article>
+                <h2>Mai mult decât Sushi</h2>
+                <p>Deși sushi este inima meniului nostru, sufletul bucătăriei asiatice este vast și plin de surprize. La noi 
+                    veți găsi confortul unui bol de Ramen aburind, gătit lent pentru a extrage arome profunde, textura 
+                    crocantă și umplutura suculentă a Gyozei făcute în casă, sau preparate Wok vibrante. Ne-am propus să 
+                    capturăm diversitatea Asiei, oferind opțiuni echilibrate, de la preparate vegetariene creative până la 
+                    gustări picante, perfecte pentru a fi împărțite cu prietenii și familia.
+                </p>
+            </article>
+
+            <div class="about__banner">
+                <img src="assets/about_us_images/cooking_team.webp" alt="Echipa de bucatari Nova" />
+            </div>
+
+            <article>
+                <h2>Misiunea Nova</h2>
+                <p>Ne dorim ca fiecare vizită la Nova Sushi sau fiecare comandă care ajunge la ușa ta să fie un moment de 
+                    bucurie și relaxare. Misiunea noastră depășește simpla servire a mâncării; ne propunem să transformăm 
+                    prânzul sau cina într-un ritual de răsfăț. Fie că sărbătorești un eveniment special sau doar cauți o 
+                    evadare delicioasă din cotidian, echipa Nova este aici să te întâmpine cu ospitalitate și pasiune pentru 
+                    gustul autentic.
+                </p>
+            </article>
+
+            <footer>
+                <a href="home.html" class="home_btn">
+                    Te-am convins? Te așteptăm să guști perfecțiunea asiatică. 
+                    <i class="ri-restaurant-2-line"></i>
+                </a>
+            </footer>
+        </section>
+    </main>
+    <!-- FOOTER SECTION -->
+    <!-- SCROLL UP SECTION -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-fill"></i>
+    </a>
+</body>
+</html>

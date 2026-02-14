@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #748091;
+}
+
+.item {
+  width: 25px;
+  height: 25px;
+  background-color: #20a2ff;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* "flex-grow" face ca toate itemele sa ocupe tot spatiul containerului, daca mai exista spatiu liber */
+  /* flex-grow: 1; */
+  /* (valoare implicita 1), "felx-shrink" permite ietmelor sa se micsoreze cand nu mai este spatiu disponibil */
+  /* flex-shrink: 1; */
+  /* "flex" este o combinatie intre toate proprietatile flexbox-ului. Prima valoare reprezinta "flex-grow", a doua - "flex-shtink", iar ultima "flex-basis" */
+  flex: 1 1 0px;
+}
+
+#item-one {
+  /* "flex-grow" poate fi folosit si pe iteme individual */
+  /* flex-grow: 4; */
+  /* "flex-basis" se foloseste atunci cand vreau ca elementele sa aiba dimensiuni diferite */
+  flex-basis: 25px;
+}
+
+#item-two {
+  /* "flex-basis" se foloseste atunci cand vreau ca elementele sa aiba dimensiuni diferite */
+  flex-basis: 50px;
+}
+
+#item-three {
+  /* "flex-basis" se foloseste atunci cand vreau ca elementele sa aiba dimensiuni diferite */
+  flex-basis: 75px;
+}
+
+#item-four {
+  /* "flex-basis" se foloseste atunci cand vreau ca elementele sa aiba dimensiuni diferite */
+  flex-basis: 100px;
+}
+
+#item-five {
+  /* "flex-basis" se foloseste atunci cand vreau ca elementele sa aiba dimensiuni diferite */
+  flex-basis: 125px;
+}
+
+.container {
+  /* "display flex", transforma toate elementele containerului in flexbox */
+  display: flex;
+  border: 2px solid black;
+  /* "flex-direction" controleaza daca elementele sunt afisate pe rand (row) sau pe coloana (column) */
+  /* "column-reversed" afiseaza elementele in coloana de la ultimul pana la primul. "row-reverse" face acelasi lucru, doar ca pe rand */
+  /* flex-direction: row; */
+  /* "justify-content" aranjeaza elementele dealungul axei (la inceput - "flex-start", la mijloc - "center", la sfarsit - "flex-end" */
+  /* Mai exista proprietati precum "space-between" - care aliniaza elementele pe intreaga axa cu spatiu egal intre ele; "space-around" - unde toate elementele 
+  au un spatiu intre ele, iar inaintea primului si dupa ultimul este jumatate din spatiul dintre celelalte elemente; si "space-evenly" - unde toate elementele 
+  au aceeasi distanta intre ele*/
+  /* justify-content: center; */
+  /* "align-item" aliniaza elementele dealungul celeilalte axe */
+  align-items: center;
+  /* "gap" controleaza spatiul dintre elemente */
+  gap: 10px;
+  /* height: 650px; */
+  /* Daca "flex-shrink" este setat la 0, "flex-wrap: wrap;" va permite itemelor sa se pozitioneze pe urmatoarele randuri fara a se micsora, cand nu mai este 
+  suficient spatiu */
+  flex-wrap: nowrap;
+}

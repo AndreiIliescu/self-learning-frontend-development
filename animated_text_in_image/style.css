@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300px;
+  background-image: url(./assets/images/sky_image.webp);
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -500px;
+  }
+}

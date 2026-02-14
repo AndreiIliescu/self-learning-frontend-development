@@ -1,0 +1,44 @@
+# =============== DEPENDENTE =============== #
+node_modules/
+jspm_packages/
+bower_components/
+
+# =============== BUILD / OUTPUT =============== #
+dist/
+build/
+out/
+coverage/
+.tmp/
+.temp/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# =============== LOGS =============== #
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============== ENV =============== #
+.env
+.env.*
+!.env.example
+
+# =============== IDE SI EDITOARE =============== #
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============== TOOLING =============== #
+.eslintcache
+.stylelintcache
+
+# =============== MISC =============== #
+*.tgz

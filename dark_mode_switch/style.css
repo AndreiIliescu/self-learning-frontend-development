@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  transition: 0.3s;
+}
+
+button {
+  font-size: 35px;
+  border-radius: 5px;
+}
+
+.dark {
+  background-color: #111;
+  color: white;
+}

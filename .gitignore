@@ -1,44 +1,180 @@
-# =============== DEPENDENTE =============== #
+# ============================================================
+# .gitignore
+# Project: self-learning-frontend-development
+# Stack: HTML5, CSS3, Vanilla JavaScript
+# ============================================================
+
+
+# ============================================================
+# DEPENDENCIES
+# ============================================================
+
 node_modules/
 jspm_packages/
 bower_components/
+vendor/
 
-# =============== BUILD / OUTPUT =============== #
+
+# ============================================================
+# PACKAGE MANAGER FILES
+# ============================================================
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnp
+.pnp.js
+.yarn/
+
+
+# ============================================================
+# BUILD AND OUTPUT DIRECTORIES
+# ============================================================
+
 dist/
 build/
 out/
+public/build/
 coverage/
+
+
+# ============================================================
+# CACHE AND TEMP FILES
+# ============================================================
+
+.cache/
 .tmp/
 .temp/
-.cache/
 .parcel-cache/
-.next/
-.nuxt/
-.svelte-kit/
+.eslintcache
+.stylelintcache
+.prettiercache
+*.tsbuildinfo
 
-# =============== LOGS =============== #
+
+# ============================================================
+# ENVIRONMENT AND SECRETS
+# ============================================================
+
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.*
+!.env.example
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# =============== ENV =============== #
-.env
-.env.*
-!.env.example
 
-# =============== IDE SI EDITOARE =============== #
-.vscode/
+# ============================================================
+# OPERATING SYSTEM FILES
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+
+# ============================================================
+# EDITORS AND IDES
+# ============================================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, IntelliJ)
 .idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
 *.swp
 *.swo
-*~
-.DS_Store
-Thumbs.db
+*.swn
 
-# =============== TOOLING =============== #
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+
+# ============================================================
+# LINTERS AND FORMATTERS
+# ============================================================
+
 .eslintcache
 .stylelintcache
+.prettiercache
+.prettier_cache
 
-# =============== MISC =============== #
+
+# ============================================================
+# TESTING
+# ============================================================
+
+coverage/
+.nyc_output/
+cypress/screenshots/
+cypress/videos/
+
+
+# ============================================================
+# ARCHIVES AND COMPRESSED FILES
+# ============================================================
+
+*.zip
+*.tar
+*.tar.gz
 *.tgz
+*.rar
+*.7z
+
+
+# ============================================================
+# MISC GENERATED FILES
+# ============================================================
+
+*.map
+*.orig
+*.bak
+*.patch

@@ -44,6 +44,7 @@ The goal is to build a strong foundation in the core technologies of the web bef
 | [Neumorphism Button Effect](./neumorphism_button_effect/) | Soft UI button style using CSS shadows | HTML5, CSS3 |
 | [Shimmer Effect](./shimmer_effect/) | Loading skeleton shimmer animation | HTML5, CSS3 |
 | [Social Media Buttons](./social_media_buttons/) | Styled social media button components | HTML5, CSS3 |
+| [Loading Animation](./loading_animation/) | Designed a circular loading element with 360° spin animation | HTML5, CSS3 |
 
 ---
 
@@ -117,6 +118,9 @@ self-learning-frontend-development/
 ├── image_blur_hover_effect/
 │   ├── assets/
 │   │   └── images/
+│   ├── index.html
+│   └── style.css
+├── loading_animation/
 │   ├── index.html
 │   └── style.css
 ├── neumorphism_button_effect/

@@ -19,7 +19,8 @@ body {
   width: 100px;
   border: 10px solid white;
   border-radius: 50%;
-  border-top-color: #00b7ffb2;
+  border-top-color: #D4AF37;
+  filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
   animation: spin 1s ease infinite;
 }
 
